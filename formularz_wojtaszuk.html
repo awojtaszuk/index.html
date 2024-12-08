@@ -1,15 +1,97 @@
-<!DOCTYPE html> 
-<html lang="pl-PL"> 
-<html> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title>wojtaszuk formularz</title> 
-     </head> 
-    <body> 
-<A HREF="index.html"> wróć </A>  <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+<body style="background-color: #5DBDE9">
+    <form>
+        <h1>Formularz ogólny</h1>
+        
+        <p>Kolor :#5DBDE9 </p>
+        <p>1. Podaj imię: <input type="text" name="name"></p> 
+        <p>2. Podaj ile masz lat: <input type="number" name="age"></p>
+        
+        <p>3. Wybierz ile masz lat:</p>
+        <label><input type="radio" name="age_group" value="0-30"> 0-30</label><br>
+        <label><input type="radio" name="age_group" value="31-60"> 31-60</label><br>
+        <label><input type="radio" name="age_group" value="61-100+"> 61-100+</label><br>
+        
+        <p>4. Ile masz RAM w komputerze?</p>
+        <label><input type="radio" name="ram" value="ponizej16GB">poniżej 16GB</label><br>
+        <label><input type="radio" name="ram" value="16GB"> 16GB</label><br>
+<label><input type="radio" name="ram" value="powyzej16GB">powyżej 16GB</label><br>
+        
+        <p>5. Co najczęściej jesz</p>
+       <select name="occupation">
 
- <form action="/submit" method="post">
-    <label for="name">Imię:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    </body> 
-  </html> 
+<option value="Owoce">Owoce</option>
+            <option value="Warzywa">Warzywa</option>
+            <option value="Słodycze">Słodycze</option>
+            <option value="Słone rzeczy">Słone rzeczy</option>
+<option value="Fast food">Fast food</option>
+
+
+        </select><br>
+        
+        <p>6. Czy chciałbyś być sportowcem?</p>
+        <label><input type="radio" name="programmer" value="yes"> Tak</label><br>
+        <label><input type="radio" name="programmer" value="no"> Nie</label><br>
+        <label><input type="radio" name="programmer" value="nothing"> Nie wiem</label><br>
+        
+        <p>7. Ile razy w tym roku byłeś/byłaś w kinie?</p>
+      <label><input type="radio" name="ram" value="wogole"> w ogóle</label><br>
+<label><input type="radio" name="ram" value="Raz"> Raz</label><br>
+<label><input type="radio" name="ram" value="2-5"> 2-5</label><br>
+<label><input type="radio" name="ram" value="6-9"> 6-9</label><br>
+<label><input type="radio" name="ram" value="10+"> 10 lub więcej</label><br>
+
+<p>8. Co najbardziej lubisz robić na komputerze</p>
+       <select name="occupation">
+<option value="gry">Grać w gry</option>
+            <option value="filmy">Oglądać filmy</option>
+            <option value="praca">Pracować</option>
+            <option value="cokolwiek">Cokolwiek byle by go używać</option>
+
+        </select><br>
+
+        
+        <p>9. Jakie uprawiasz sporty?</p>
+<label><input type="checkbox" name="sports" value="zadne"> Żadne</label><br>
+        <label><input type="checkbox" name="sports" value="football"> Piłka nożna</label><br>
+        <label><input type="checkbox" name="sports" value="kosz"> Koszykówka</label><br>
+        <label><input type="checkbox" name="sports" value="siata"> Siatkówka</label><br>
+        <label><input type="checkbox" name="sports" value="other"> Inne</label><br>
+        
+        <p>10. Jak wybrałeś inne to jakie?(max 100 słów)</p>
+       <input type="text" name="name"><br>
+        
+        <p>11. Jaki mamy dziś dzień</p>
+        <input type="number" name="d" placeholder="Dzień"> <input type="number" name="m" placeholder="Miesiąc"> <input type="number" name="r" placeholder="Rok"><br>
+        
+        <p>12. Czym jeździsz do szkoły/pracy?</p>
+        <select name="occupation">
+            <option value="Autobus">Autobus</option>
+            <option value="samochod">Samochód</option>
+            <option value="i">Inne</option>
+        </select><br>
+        
+        <p>13. Ile ważysz?</p>
+        <label><input type="radio" name="weight" value="less_than_50"> Mniej niż 50kg</label><br>
+        <label><input type="radio" name="weight" value="50"> 50kg</label><br>
+        <label><input type="radio" name="weight" value="more_than_50"> Więcej niż 50kg</label><br>
+        
+        <p>14. Ile masz wzrostu?</p>
+       <label><input type="checkbox" name="wzrost" value="150"> Poniżej 150 cm</label><br>
+        <label><input type="checkbox" name="wzrost" value="15060"> 150-160 cm</label><br>
+        <label><input type="checkbox" name="wzrost" value="17080">170-180 cm</label><br>
+        <label><input type="checkbox" name="wzrost" value="180"> Powyżej 180 cm</label><br>
+
+        
+        <button type="submit">Wyślij</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
